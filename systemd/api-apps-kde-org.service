@@ -1,0 +1,7 @@
+[Unit]
+Description=api.projects.kde.org
+
+[Service]
+ExecStart=/home/api-projects-kde-org/bin/api-projects-kde-org.git
+WorkingDirectory=/home/api-projects-kde-org
+Restart=always

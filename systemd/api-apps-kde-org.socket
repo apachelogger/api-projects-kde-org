@@ -1,0 +1,12 @@
+[Unit]
+Description=api.projects.kde.org socket
+
+[Socket]
+ListenStream=0.0.0.0:8383
+ListenStream=/home/api-projects-kde-org/service.sock
+SocketMode=0660
+SocketUser=api-projects-kde-org
+#SocketGroup=api-projects-kde-org-access
+
+[Install]
+WantedBy=sockets.target
